@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create blog post</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class = "btn btn-primary" style="background-color: aqua">Submit</button>
+</form>
+</body>
+</html>
+
+<!--<h1>Submit post info</h1>-->
+<!--<div class="form-group">-->
+<!--    {% csrf_token %}-->
+<!--        <label for = "title"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title</label>-->
+<!--        <br>-->
+<!--        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class = "form-control" id = "title" name = "text" placeholder = "Enter the title of the blog post" style = "font-size: 15pt; width: 500px">-->
+<!--    </div>-->
+<!--    <div class="form-group">-->
+<!--        <label for = "content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;content</label>-->
+<!--		<br>-->
+<!--        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class = "form-control" id = "content" name = "content" placeholder = "Enter the blog content" style = "font-size: 15pt; width: 500px">-->
+<!--    </div>-->
+<!--    <br>-->
+<!--    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class = "btn btn-primary" style="background-color: aqua">Submit</button>-->
+<!--</form>-->
